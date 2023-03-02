@@ -1,0 +1,15 @@
+[20,11,15,8,9]
+ 0   1 2  3 4
+
+chạy vòng for (i=1 tới n)
+
+
+cho j=i-1
+cho t=a[i]
+
+nếu t<a[j] và j>0 thì a[j+1] =a[j]
+  // tức là 20 sẽ được thay thế cho 11 ở hiện tại
+
+  khi đó giảm j xuống 1 để vị trí của h là ở -1
+
+  tiếp tục cho a[j+1] tức là j ở vị trí trống a[0] vừa rút ra để = t(11)
