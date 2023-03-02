@@ -1,0 +1,50 @@
+
+[64,25,12,22,11]
+
+
+chạy vòng i từ 0 tới n-1
+cho một biến mới là [o] để so sánh không trừng lặp với i
+chạy vòng j từ i+1 tới n
+xét a[j] <a[o]
+thì o = j 
+ swap vị trí của i lúc đầu với o lúc sau để phần tử bé hơn vừa so sánh là đứng đầu trong mảng a[i]
+
+
+
+min i =0(i)
+j=2 -> 5
+a[j1]< a[min0]
+a[min0]=25 
+
+a[j2]<a[min25]
+a[min0]=12
+
+a[j3]>a[12]
+a[min0]=12
+
+a[j4]<a[min12]
+a[min0]=11
+
+[11,64,25,12,22]
+min i =1(i)
+
+25<64
+12<25
+12<22
+
+a[min1]=12
+11,12,64,25,22
+
+
+min i =2(i)
+64<25
+25<22
+
+a[min2]=22
+11,12,22,64,25
+
+min i=3(i)
+
+64>25
+a[min3]=25
+11,12,22,25,64
